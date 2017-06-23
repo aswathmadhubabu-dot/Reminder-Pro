@@ -1,15 +1,14 @@
-import {ADD_REMINDER} from '../constants';
+import { ADD_REMINDER } from '../constants';
 
-const reminders = function(state= [],action){
+const reminders = function (state = [], action) {
     var reminders = null;
-    switch(action.type)
-    {
-        case ADD_REMINDER : 
-        reminders = [...state,reminder(action)];
-        console.log('remindes as state',reminders);
-        return reminders;
-        default: 
-        return state;
+    switch (action.type) {
+        case ADD_REMINDER:
+            reminders = [...state, reminders(action)];
+            console.log('remindes as state', reminders);
+            return reminders;
+        default:
+            return state;
     }
 
 }
