@@ -1,0 +1,21 @@
+.card-block
+
+{
+  width: 50%;
+  margin-left: 25%;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+input[type=text]
+{
+font-family: 'Open Sans', cursive;
+	font-size: 25px;
+	color:darkslategrey;
+}
+input
+{
+    font-family: cursive;
+    color:darkslategrey;
+}
+.btn {
+	outline: none !important;
+}
