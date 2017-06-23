@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-function (){
-    return{
-        type:'ADD_REMINDER',
-        payload:''
-    }
-}
+
 class App extends Component {
     render() {
         return (
