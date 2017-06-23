@@ -9,7 +9,9 @@ const reminders = function(state= [],action){
         console.log('remindes as state',reminders);
         return reminders;
         default: 
-        return action;
+        return state;
     }
 
 }
+
+export default reminders;
