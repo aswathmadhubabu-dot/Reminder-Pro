@@ -3,6 +3,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import { addReminder } from '../actions';
 import { deleteReminder } from '../actions';
+import {clearReminders} from '../actions';
 import moment from 'moment';
 class App extends Component {
     constructor(props) {
@@ -18,6 +19,9 @@ class App extends Component {
     }
     deleteReminder(id) {
         this.props.deleteReminder(id);
+    }
+    clearReminders(){
+        
     }
     renderReminders() {
         const {reminders} = this.props;
@@ -54,11 +58,9 @@ class App extends Component {
                     <div className="md-form">
                         <input type="datetime-local" id="form4" className="form-control" placeholder='Date' onChange={event => this.setState({ 'dueDate': event.target.value })} />
                         <div className='text-center'><button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button></div>
+                        <button className='btn btn-warning' on></button>
                     </div>
                     
-                        <div class="options">
-                           <button className='btn btn-warning'>Remove All</button>
-                        </div>
                     
                     {this.renderReminders()}
                 </div>
