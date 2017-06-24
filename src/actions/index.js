@@ -9,3 +9,12 @@ export const addReminder = function(text) {
     console.log('action from add reminder', action);
     return action;
 }
+
+export const deleteReminder = function(id) {
+    const action = {
+        type: 'DELETE_REMINDER',
+        id
+    }
+    console.log('action from delete reminder', action);
+    return action;
+}

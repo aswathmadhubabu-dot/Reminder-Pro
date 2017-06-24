@@ -3,7 +3,7 @@ import './App.css';
 import { connect } from 'react-redux';
 
 import { addReminder } from '../actions';
-
+import { deleteReminder } from '../actions';
 class App extends Component {
     constructor(props) {
         super(props);
