@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import {connect} from 'react-redux';
+import {ADD_REMINDER} from '../reducers'
 
 
 class App extends Component {
