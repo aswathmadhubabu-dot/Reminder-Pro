@@ -1,3 +1,9 @@
+/*
+ * @Author: Aswath MadhuBabu 
+ * @Date: 2017-06-24 14:08:46 
+ * @Last Modified by:   Aswath MadhuBabu 
+ * @Last Modified time: 2017-06-24 14:08:46 
+ */
 import { ADD_REMINDER } from '../constants';
 import { DELETE_REMINDER } from '../constants';
 import { CLEAR_REMINDERS } from '../constants';
