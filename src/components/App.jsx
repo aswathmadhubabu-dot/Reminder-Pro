@@ -51,15 +51,21 @@ class App extends Component {
                         <hr className="mt-2 mb-2" />
                     </div>
 
-                    <div className="md-form">
-                        <i className="fa fa-bookmark"></i>
-                        <input type="text" id="form2" className="form-control" placeholder='i want...' onChange={event => this.setState({ 'text': event.target.value })} />
+                    <div className="md-form col-md-12">
+                        <div className='col-md-1'>
+                        </div>
+                            <input type="text" id="form2" className="form-control" placeholder='i want...' onChange={event => this.setState({ 'text': event.target.value })} />
+                        
+                        <div className='col-md-6'>
+                            <button className="btn btn-blue-grey" onClick={() => this.addReminder()}>SUBMIT</button>
+                        </div>
 
-                        <button className="btn btn-blue-grey" onClick={() => this.addReminder()}>SUBMIT</button>
+
+
 
                     </div>
                     <div className="md-form">
-                        <i className="fa fa-calendar "></i>
+
                         <input type="date" id="form4" className="form-control" placeholder='Date' />
 
                     </div>
