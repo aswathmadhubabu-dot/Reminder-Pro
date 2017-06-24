@@ -31,6 +31,10 @@ const reminders = function(state = [], action) {
             reminders = removeById(state,action.id);
             bake_cookie('reminders',reminders);
             return reminders;
+        case CLEAR_REMINDERS:
+            reminders = [];
+            bake_cookie('reminders',reminders);
+            return reminders;
         default:
             return state;
     }

@@ -53,7 +53,7 @@ class App extends Component {
                     </div>
                     <div className="md-form">
                         <input type="datetime-local" id="form4" className="form-control" placeholder='Date' onChange={event => this.setState({ 'dueDate': event.target.value })} />
-                        <button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button>
+                        <div className='text-center'><button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button></div>
                     </div>
                     {this.renderReminders()}
                 </div>
