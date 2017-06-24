@@ -6,4 +6,9 @@ import { createStore } from 'redux';
 import reducer from './reducers'
 
 var store = createStore(reducer);
-ReactDom.render( < Provider store = { store } > < App / > < /Provider>, document.getElementById('root'));
+ReactDom.render( <
+        Provider store = { store } >
+        <
+        App / >
+        <
+        /Provider>, document.getElementById('root'));
