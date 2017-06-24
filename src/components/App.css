@@ -25,5 +25,15 @@ input {
 }
 .delete {
     color: #ff4436;
-    transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+.todo
+{
+    border-radius: 4px;
+    font-size: 20px;
+    color: #ECEFF1;
+    padding: 10px 20px;
+    background: #343436;
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
 }
