@@ -10,12 +10,12 @@ class App extends Component {
         super(props);
         this.state = {
             text: '',
-            dueDate :''
+            dueDate: ''
         }
     }
     addReminder() {
-        console.log('due date',this.state.dueDate);
-        this.props.addReminder(this.state.text,this.state.dueDate);
+        console.log('due date', this.state.dueDate);
+        this.props.addReminder(this.state.text, this.state.dueDate);
     }
     deleteReminder(id) {
         this.props.deleteReminder(id);
@@ -30,9 +30,12 @@ class App extends Component {
                         return (<li key={reminder.id} className='list-group-item justify-content-between'>
                             <div className='list-group-item '>{reminder.text}    </div>
                             <div className='list-group-item'><em>{moment(new Date(reminder.dueDate)).fromNow()}</em></div>
-                            <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}><i className="fa fa-times"></i>
-                            </button>
-                             
+                            <div class="text-center">
+                                <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}><i className="fa fa-times"></i>
+                                </button>
+                            </div>
+
+
 
 
 
@@ -54,19 +57,19 @@ class App extends Component {
                     </div>
 
                     <div className="md-form">
-                        
-                        <input type="text" id="form2" className="form-control" placeholder='i want...' onChange={event => this.setState({ 'text': event.target.value })} required/>
 
-                        
+                        <input type="text" id="form2" className="form-control" placeholder='i want...' onChange={event => this.setState({ 'text': event.target.value })} required />
+
+
 
                     </div>
                     <div className="md-form">
-                        
-                        <input type="datetime-local" id="form4" className="form-control" placeholder='Date'onChange={event => this.setState({ 'dueDate': event.target.value })} />
+
+                        <input type="datetime-local" id="form4" className="form-control" placeholder='Date' onChange={event => this.setState({ 'dueDate': event.target.value })} />
                         <button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button>
                     </div>
                     {this.renderReminders()}
-                    
+
                 </div>
             </div>
         );
