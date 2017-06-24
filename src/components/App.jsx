@@ -29,7 +29,7 @@ class App extends Component {
                     reminders.map(reminder => {
                         return (<li key={reminder.id} className='list-group-item justify-content-between'>
                             <div className='list-group-item '>{reminder.text}    </div>
-                            <div className='list-group-item'><em>{moment(new Date(reminder.dueDate).fromNow())}</em></div>
+                            <div className='list-group-item'><em>{moment(new Date(reminder.dueDate)).fromNow()}</em></div>
                             <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}><i className="fa fa-times"></i>
                             </button>
                              
