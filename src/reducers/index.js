@@ -6,7 +6,7 @@ const reminder = function(action) {
     return {
         text: action.text,
         id: Math.random(),
-
+        dueDate
 
     }
 }

@@ -13,6 +13,7 @@ class App extends Component {
         }
     }
     addReminder() {
+        console.log('due date',this.state.dueDate);
         this.props.addReminder(this.state.text);
     }
     deleteReminder(id) {
