@@ -7,12 +7,12 @@
 input[type=text] {
     font-family: 'Open Sans', cursive;
     font-size: 25px;
-    color: darkslategrey;
+    color: white;
 }
 
 input {
     font-family: cursive;
-    color: darkslategrey;
+    color: white;
 }
 
 .btn {
