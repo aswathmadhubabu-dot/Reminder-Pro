@@ -20,7 +20,7 @@ export const deleteReminder = function(id) {
     return action;
 }
 export const clearReminders = function() {
-    const action = {
+    return  {
         type: 'CLEAR_REMINDERS'
     }
 }
