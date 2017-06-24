@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-
 import { addReminder } from '../actions';
 import { deleteReminder } from '../actions';
 import moment from 'moment';
@@ -34,11 +33,6 @@ class App extends Component {
                                 <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}><i className="fa fa-times"></i>
                                 </button>
                             </div>
-
-
-
-
-
                         </li>)
                     })
                 }
@@ -50,34 +44,24 @@ class App extends Component {
         return (
             <div>
                 <div className="card-block">
-
                     <div className="text-center">
                         <h3><i className="fa fa-tasks"></i> Remember:</h3>
                         <hr className="mt-2 mb-2" />
                     </div>
-
                     <div className="md-form">
-
                         <input type="text" id="form2" className="form-control" placeholder='i want...' onChange={event => this.setState({ 'text': event.target.value })} required />
-
-
-
                     </div>
                     <div className="md-form">
-
                         <input type="datetime-local" id="form4" className="form-control" placeholder='Date' onChange={event => this.setState({ 'dueDate': event.target.value })} />
                         <button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button>
                     </div>
                     {this.renderReminders()}
-
                 </div>
             </div>
         );
     }
 }
-
 function mapStateToProps(state) {
-
     return {
         reminders: state
     }
