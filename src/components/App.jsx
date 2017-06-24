@@ -15,8 +15,7 @@ class App extends Component {
         this.props.addReminder(this.state.text);
     }
     deleteReminder(id) {
-    console.log('deleting ',id); 
-    console.log('thi.props',this.props);  
+          this.props.deleteReminder(id);
     }
     renderReminders() {
         const {reminders} = this.props;
@@ -27,7 +26,7 @@ class App extends Component {
                     reminders.map(reminder => {
                         return (<li key={reminder.id} className='list-group-item justify-content-between'>
                             <div className='list-group-item '>{reminder.text}    </div>
-                            <button className='btn btn-blue-grey'   onClick ={() =>this.deleteReminder(reminder.id)}>Remove &nbsp;&nbsp;<i className="fa fa-times"></i>
+                            <button className='btn btn-blue-grey' onClick ={() =>this.deleteReminder(reminder.id)}>Remove &nbsp;&nbsp;<i className="fa fa-times"></i>
                          
                             
                             </button>
