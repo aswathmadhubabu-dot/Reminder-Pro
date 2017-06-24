@@ -1,4 +1,5 @@
 import { ADD_REMINDER } from '../constants.js';
+import { DELETE_REMINDER } from '../constants.js';
 
 export const addReminder = function(text) {
     const action = {
