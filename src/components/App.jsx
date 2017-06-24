@@ -55,7 +55,7 @@ class App extends Component {
                         
                         <input type="text" id="form2" className="form-control" placeholder='i want...' onChange={event => this.setState({ 'text': event.target.value })} />
 
-                        <button className="btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button>
+                        <button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button>
 
                     </div>
                     <div className="md-form">
