@@ -25,3 +25,7 @@ input {
 {
     align-items: center;
 }
+.modal-footer
+{
+    text-align: center;
+}

@@ -27,7 +27,7 @@ class App extends Component {
                     reminders.map(reminder => {
                         return (<li key={reminder.id} className='list-group-item justify-content-between'>
                             <div className='list-group-item '>{reminder.text}    </div>
-                            <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}>Remove &nbsp;&nbsp;<i className="fa fa-times"></i>
+                            <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}><i className="fa fa-times"></i>
 
 
                             </button>
@@ -65,12 +65,7 @@ class App extends Component {
 
                     </div>
                     {this.renderReminders()}
-                     <div class="modal-footer text-center">
-                        <div class="options">
-                           <h3>By</h3>
-                           <h5>Aswath</h5>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         );
