@@ -55,11 +55,11 @@ class App extends Component {
                         <input type="datetime-local" id="form4" className="form-control" placeholder='Date' onChange={event => this.setState({ 'dueDate': event.target.value })} />
                         <div className='text-center'><button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button></div>
                     </div>
-                    <div class="modal-footer">
+                    
                         <div class="options">
                            <button className='btn btn-warning'>Remove All</button>
                         </div>
-                    </div>
+                    
                     {this.renderReminders()}
                 </div>
             </div>
