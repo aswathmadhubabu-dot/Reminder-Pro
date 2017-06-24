@@ -12,7 +12,7 @@ class App extends Component {
         }
     }
     addReminder(){
-        console.log('this.state',this.state);
+        console.log('this',this);
     }
 
     render() {
@@ -48,4 +48,4 @@ function mapDispatchToProps(dispatch)
 return bindActionCreators({addReminder},dispatch);
 }
 
-export default App;
+export default {connect}(mapDispatchToProps)(App);
