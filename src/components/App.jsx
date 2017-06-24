@@ -28,9 +28,10 @@ class App extends Component {
                     reminders.map(reminder => {
                         return (<li key={reminder.id} className='list-group-item justify-content-between'>
                             <div className='list-group-item '>{reminder.text}    </div>
+                            <div className='list-group-item'>{reminder.dueDate}</div>
                             <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}><i className="fa fa-times"></i>
                             </button>
-                             <div className='well'>{reminder.dueDate}</div>
+                             
 
 
 
@@ -55,13 +56,13 @@ class App extends Component {
                         
                         <input type="text" id="form2" className="form-control" placeholder='i want...' onChange={event => this.setState({ 'text': event.target.value })} required/>
 
-                        <button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button>
+                        
 
                     </div>
                     <div className="md-form">
                         
                         <input type="datetime-local" id="form4" className="form-control" placeholder='Date'onChange={event => this.setState({ 'dueDate': event.target.value })} />
-
+                        <button className="btn btn-floating btn-blue-grey" onClick={() => this.addReminder()}><i className='fa fa-plus'></i></button>
                     </div>
                     {this.renderReminders()}
                     
