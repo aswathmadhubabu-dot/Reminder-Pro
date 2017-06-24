@@ -1,7 +1,7 @@
 import { ADD_REMINDER } from '../constants.js';
 import { DELETE_REMINDER } from '../constants.js';
-import {CLEAR_REMINDERS} from '../constants.js';
-export const addReminder = function(text,dueDate) {
+import { CLEAR_REMINDERS } from '../constants.js';
+export const addReminder = function(text, dueDate) {
     const action = {
         type: 'ADD_REMINDER',
         text: text,
@@ -23,5 +23,4 @@ export const clearReminders = function(id) {
     const action = {
         type: 'CLEAR_REMINDERS'
     }
-  
 }
