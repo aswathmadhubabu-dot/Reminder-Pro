@@ -19,8 +19,9 @@ export const deleteReminder = function(id) {
     console.log('action from delete reminder', action);
     return action;
 }
-export const clearReminders = function() {
-    return  {
-        type: 'CLEAR_REMINDERS'
-    }
+
+export const clearReminders = () => {
+  return {
+    type: CLEAR_REMINDERS
+  }
 }
