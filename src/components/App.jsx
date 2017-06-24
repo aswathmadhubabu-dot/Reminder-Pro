@@ -15,7 +15,7 @@ class App extends Component {
         this.props.addReminder(this.state.text);
     }
     deleteReminder(id) {
-          this.props.deleteReminder(id);
+        this.props.deleteReminder(id);
     }
     renderReminders() {
         const {reminders} = this.props;
@@ -26,13 +26,13 @@ class App extends Component {
                     reminders.map(reminder => {
                         return (<li key={reminder.id} className='list-group-item justify-content-between'>
                             <div className='list-group-item '>{reminder.text}    </div>
-                            <button className='btn btn-blue-grey' onClick ={() =>this.deleteReminder(reminder.id)}>Remove &nbsp;&nbsp;<i className="fa fa-times"></i>
-                         
-                            
-                            </button>
-                        
+                            <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}>Remove &nbsp;&nbsp;<i className="fa fa-times"></i>
 
-                            
+
+                            </button>
+
+
+
 
                         </li>)
                     })
@@ -55,6 +55,8 @@ class App extends Component {
                         <i className="fa fa-bookmark"></i>
                         <input type="text" id="form2" className="form-control" placeholder='i want...' onChange={event => this.setState({ 'text': event.target.value })} />
 
+                        <button className="btn btn-blue-grey" onClick={() => this.addReminder()}>SUBMIT</button>
+
                     </div>
                     <div className="md-form">
                         <i className="fa fa-calendar "></i>
@@ -62,9 +64,7 @@ class App extends Component {
 
                     </div>
                     {this.renderReminders()}
-                    <div className="text-center">
-                        <button className="btn btn-blue-grey" onClick={() => this.addReminder()}>SUBMIT</button>
-                    </div>
+
                 </div>
             </div>
         );
@@ -77,4 +77,4 @@ function mapStateToProps(state) {
         reminders: state
     }
 }
-export default connect(mapStateToProps, { addReminder,deleteReminder })(App);
+export default connect(mapStateToProps, { addReminder, deleteReminder })(App);
