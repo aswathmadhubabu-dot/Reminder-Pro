@@ -1,5 +1,6 @@
 import { ADD_REMINDER } from '../constants';
 import { DELETE_REMINDER } from '../constants';
+import {CLEAR_REMINDERS} from '../constants';
 import {bake_cookie} from 'sfcookies';
 import {read_cookie} from 'sfcookies'; 
 const reminder = function(action) {
