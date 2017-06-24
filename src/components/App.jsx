@@ -16,7 +16,7 @@ class App extends Component {
     }
     renderReminders(){
         const {reminders} = this.props;
-        console.log(reminders);
+        console.log('final',reminders);
     }
     render() {
         console.log('props',this.props);
