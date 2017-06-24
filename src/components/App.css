@@ -23,3 +23,7 @@ input {
 {
     align-items: center;
 }
+.delete {
+    color: #ff4436;
+    transition: linear 0.3s;
+}
