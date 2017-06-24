@@ -1,10 +1,10 @@
 import { ADD_REMINDER } from '../constants.js';
 
-export const addReminder = function (text) {
+export const addReminder = function(text) {
     const action = {
         type: 'ADD_REMINDER',
         text: text
     }
-    console.log(action);
+    console.log('action from add reminder', action);
     return action;
 }
