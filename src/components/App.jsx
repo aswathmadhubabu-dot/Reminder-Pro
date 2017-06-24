@@ -3,7 +3,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import { addReminder } from '../actions';
 import { deleteReminder } from '../actions';
-import {clearReminders} from '../actions';
+import { clearReminders } from '../actions';
 import moment from 'moment';
 class App extends Component {
     constructor(props) {
@@ -61,9 +61,9 @@ class App extends Component {
                         {this.renderReminders()}
                         <button className='btn btn-warning' onClick={() => this.props.clearReminders()}><i className='fa fa-gavel'></i></button>
                     </div>
-                    
-                    
-                    
+
+
+
                 </div>
             </div>
         );
@@ -74,4 +74,4 @@ function mapStateToProps(state) {
         reminders: state
     }
 }
-export default connect(mapStateToProps, { addReminder, deleteReminder ,clearReminders})(App);
+export default connect(mapStateToProps, { addReminder, deleteReminder, clearReminders })(App);
