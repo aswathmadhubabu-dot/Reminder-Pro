@@ -14,7 +14,7 @@ class App extends Component {
     }
     addReminder() {
         console.log('due date',this.state.dueDate);
-        this.props.addReminder(this.state.text);
+        this.props.addReminder(this.state.text,this.state.dueDate);
     }
     deleteReminder(id) {
         this.props.deleteReminder(id);
