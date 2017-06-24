@@ -8,6 +8,12 @@ const reminder = function(action) {
 
     }
 }
+const removeById(state =[],id){
+const reminders = state.filter(reminder => reminder.id !== id);
+console.log('new removed reminders',reminders);
+return reminders;
+
+}
 
 const reminders = function(state = [], action) {
     let reminders = null;
