@@ -21,7 +21,7 @@ class App extends Component {
             <ul className='list-group'>
             {
                 reminders.map(reminder => {
-                    return(<li key ={reminder.id} className='list-group-item'></li>)
+                return(<li key ={reminder.id} className='list-group-item'>{reminder.text}</li>)
                 })
             }
             </ul>
