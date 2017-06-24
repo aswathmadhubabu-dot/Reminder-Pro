@@ -46,6 +46,7 @@ class App extends Component {
 
 function mapStateToProps(state)
 {
-console.lo('state',state);
+console.log('state',state);
+return state;
 }
 export default connect(mapStateToProps, { addReminder })(App);
