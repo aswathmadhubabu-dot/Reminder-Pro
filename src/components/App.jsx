@@ -16,6 +16,7 @@ class App extends Component {
     }
 
     render() {
+        console.log('props',this.props);
         return (
             <div>
                 <div className="card-block">
@@ -46,7 +47,9 @@ class App extends Component {
 
 function mapStateToProps(state)
 {
-console.log('state',state);
-return state;
+
+return {
+reminders : state
+}
 }
 export default connect(mapStateToProps, { addReminder })(App);
