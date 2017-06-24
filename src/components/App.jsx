@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {ADD_REMINDER} from '../actions';
+import {addReminder} from '../actions';
 
 class App extends Component {
     constructor(props) {
