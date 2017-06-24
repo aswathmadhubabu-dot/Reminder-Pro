@@ -20,9 +20,9 @@ class App extends Component {
     deleteReminder(id) {
         this.props.deleteReminder(id);
     }
-    clearReminders(){
+    // clearReminders(){
 
-    }
+    // }
     renderReminders() {
         const {reminders} = this.props;
         console.log('final', reminders);
@@ -33,7 +33,7 @@ class App extends Component {
                         return (<li key={reminder.id} className='list-group-item justify-content-between'>
                             <div className='list-group-item '>{reminder.text}    </div>
                             <div className='list-group-item'><em>{moment(new Date(reminder.dueDate)).fromNow()}</em></div>
-                            <div class="text-center">
+                            <div className="text-center">
                                 <button className='btn btn-blue-grey' onClick={() => this.deleteReminder(reminder.id)}><i className="fa fa-times"></i>
                                 </button>
                             </div>
