@@ -65,7 +65,12 @@ class App extends Component {
 
                     </div>
                     {this.renderReminders()}
-
+                     <div class="modal-footer text-center">
+                        <div class="options">
+                           <h3>By</h3>
+                           <h5>Aswath</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
