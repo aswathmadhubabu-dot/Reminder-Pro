@@ -48,4 +48,4 @@ function mapDispatchToProps(dispatch)
 return bindActionCreators({addReminder},dispatch);
 }
 
-export default {connect}(mapDispatchToProps)(App);
+export default connect(null,mapDispatchToProps)(App);
