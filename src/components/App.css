@@ -1,6 +1,8 @@
 .card-block {
-    width: 50%;
-    margin-left: 25%;
+    width: 40%;
+    margin-left: 28%;
+    border-radius: 10px;
+    background: red;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
