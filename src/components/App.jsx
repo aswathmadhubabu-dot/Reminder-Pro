@@ -14,7 +14,10 @@ class App extends Component {
     addReminder() {
         this.props.addReminder(this.state.text);
     }
-
+    renderReminders(){
+        const {reminders} = this.props;
+        console.log(reminders);
+    }
     render() {
         console.log('props',this.props);
         return (
@@ -36,6 +39,7 @@ class App extends Component {
                         <input type="date" id="form4" className="form-control" placeholder='Date' />
 
                     </div>
+                    {this.renderReminders()}
                     <div className="text-center">
                         <button className="btn btn-blue-grey" onClick={() => this.addReminder()}>SUBMIT</button>
                     </div>
