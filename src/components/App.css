@@ -1,21 +1,27 @@
-.card-block
+.card-block {
+    width: 50%;
+    margin-left: 25%;
+}
 
-{
-  width: 50%;
-  margin-left: 25%;
-}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-input[type=text]
-{
-font-family: 'Open Sans', cursive;
-	font-size: 25px;
-	color:darkslategrey;
+input[type=text] {
+    font-family: 'Open Sans', cursive;
+    font-size: 25px;
+    color: darkslategrey;
 }
-input
-{
+
+input {
     font-family: cursive;
-    color:darkslategrey;
+    color: darkslategrey;
 }
+
 .btn {
-	outline: none !important;
+    outline: none !important;
+}
+
+.App {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
