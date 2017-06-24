@@ -14,24 +14,25 @@ class App extends Component {
     addReminder() {
         this.props.addReminder(this.state.text);
     }
-    renderReminders(){
+    renderReminders() {
         const {reminders} = this.props;
-        console.log('final',reminders);
-        return(
+        console.log('final', reminders);
+        return (
             <ul className='list-group'>
-            {
-                reminders.map(reminder => {
-                return(<li key ={reminder.id} className='list-group-item justify-content-between'>
-                <div className='list-group-item  list-group-item-success'>{reminder.text}<button className='btn btn-danger'><i className='fa fa-wrong'></i></button></div>
-                
-                </li>)
-                })
-            }
+                {
+                    reminders.map(reminder => {
+                        return (<li key={reminder.id} className='list-group-item justify-content-between'>
+                            <div className='list-group-item  list-group-item-success'>{reminder.text}</div>
+                            <button className='btn btn-danger'><i class="fa fa-window-close" aria-hidden="true"></i>
+                            </button>
+                        </li>)
+                    })
+                }
             </ul>
         )
     }
     render() {
-        console.log('props',this.props);
+        console.log('props', this.props);
         return (
             <div>
                 <div className="card-block">
@@ -61,11 +62,10 @@ class App extends Component {
     }
 }
 
-function mapStateToProps(state)
-{
+function mapStateToProps(state) {
 
-return {
-reminders : state
-}
+    return {
+        reminders: state
+    }
 }
 export default connect(mapStateToProps, { addReminder })(App);
