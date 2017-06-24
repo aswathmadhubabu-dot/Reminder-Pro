@@ -22,8 +22,8 @@ class App extends Component {
             {
                 reminders.map(reminder => {
                 return(<li key ={reminder.id} className='list-group-item justify-content-between'>
-                <div className='list-group-item  list-group-item-success'>{reminder.text}</div>
-                <button className='btn btn-danger'><i class="fa fa-close" aria-hidden="true"></i>
+                <div className='list-item  list-group-item-success'>{reminder.text}</div>
+                <button className='list-item btn btn-danger'><i className="fa fa-times"></i>
 </button>
                 </li>)
                 })
