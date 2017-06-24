@@ -1,6 +1,6 @@
 import { ADD_REMINDER } from '../constants';
 
-const reminders = function (state = [], action) {
+const reminders = function(state = [], action) {
     var reminders = null;
     switch (action.type) {
         case ADD_REMINDER:
