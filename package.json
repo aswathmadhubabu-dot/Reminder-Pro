@@ -9,7 +9,7 @@
     "sfcookies": "^1.0.2"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
